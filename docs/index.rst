@@ -36,8 +36,8 @@ Flask-Triangle provides you with a full collection of HTML widgets and
 validators. For example ::
 
     from flask.ext.triangle import Form
-    from flask.ext.triangle.widgets import TextInput
-    from flask.ext.triangle.validators import Required
+    from flask.ext.triangle.widgets.standard import TextInput
+    from flask.ext.triangle.modifiers.required import Required
 
     class MyForm(Form):
         entry = TextInput(u'entry', validators=[Required()])
